@@ -15,14 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="RAVPO_RA.ino" />
     <None Include="src\arduino folders read me.txt">
       <Filter>Misc Files</Filter>
+    </None>
+    <None Include="RAVPO_RA.ino">
+      <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.RAVPO_RA.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\RAVPO\RAVPO_FIRMWARE\RAVPO_firmware_\RAVPO.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\RAVPO\RAVPO_FIRMWARE\RAVPO_firmware_\RAVPO_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAVPO\RAVPO_FIRMWARE\RAVPO_firmware_\RAVPO_KEYINPUT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAVPO\RAVPO_FIRMWARE\RAVPO_firmware_\RAVPO_SERIAL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAVPO\RAVPO_FIRMWARE\RAVPO_firmware_\RAVPO_Stepper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
