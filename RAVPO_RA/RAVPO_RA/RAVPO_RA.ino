@@ -8,20 +8,24 @@
 #include "RAVPO.h"
 INITS initmode;
 MOVING moving;
+
+void speedset(int speedvalue) {
+	OCR1A = speedvalue;
+	OCR3A = speedvalue;
+}
+
 void setup() {
 	initmode.j1E = true;
 	initmode.j2E = true;
 	initmode.roE = true;
 
 	initmode.RAVPO_init(initmode, 1000);
+	moving.MOVING_XY(0, 0);
 }
 
 // the loop function runs over and over again until power down or reset
 void loop() {
-	moving.MOVING_XY(500, 500);
-	delay(1000);
-	moving.MOVING_XY(0, 0);
-	delay(1000);
+
 }
 
 
